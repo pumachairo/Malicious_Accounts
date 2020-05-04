@@ -36,13 +36,13 @@
     <script src="vendor/datatables-responsive/dataTables.responsive.js"></script>
    
     <script>
-    function solonumeros(e){
-        teclado=String.fromCharCode(key);
+    function solonumeros(e){ // e is never used anywhere in the function
+        teclado=String.fromCharCode(key); // wtf is key? No, I mean, I  know what a key is, but wtf is this argument supposed to mean?
         numeros="0123456789";
         especiales="8-37-38-46";
         teclado_especial=false;
 
-    for (var i =especiales) {
+    for (var i =especiales) { //The fuck is this shit? 
         if(key==especiales[i]){
             teclado_especial=true;
         }
